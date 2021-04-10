@@ -1,0 +1,92 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.outerdiv div {
+  padding: 3em;
+}
+.outerdiv {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+h3 {
+  color: aliceblue;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5em;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+button {
+  padding: 1em 2em;
+  border-radius: 50px;
+  font-size: 1.5em;
+  border: none;
+  margin-top: 7em;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.outerdiv div:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.outerdiv div:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.outerdiv div:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.outerdiv div:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+.outerdiv div:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+.outerdiv div:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+.outerdiv div:nth-child(1) button:hover,
+.outerdiv div:nth-child(2) button:hover,
+.outerdiv div:nth-child(3) button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+button:hover {
+  background-color: inherit;
+  border: 2px white solid;
+}
+@media (min-width: 375px) {
+  .outerdiv {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100vh;
+    padding: 7em;
+  }
+  .outerdiv div {
+    width: 13.5em;
+  }
+
+  .outerdiv div:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  .outerdiv div:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
